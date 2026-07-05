@@ -1,14 +1,19 @@
 # Institute-Management-System
 A robust, role-based Institute Management System (IMS) built in Python to streamline student lifecycle management, course scheduling, attendance tracking, and fee transactions.
+
 # Institute Management System (IMS)
 
-A Python-based Institute Management System designed to handle daily administrative tasks, academic monitoring, financial transactions, and user management for an educational institution.
+A robust, role-based Institute Management System (IMS) built in Python to streamline student lifecycle management, course scheduling, attendance tracking, and fee transactions.
+
+This application handles daily administrative tasks, academic monitoring, financial transactions, and user management for educational institutions.
+
+---
 
 ## 📁 Project Structure
 
-Based on the architecture of the project, the system is divided into structural database management, data models, and service/business logic layers:
+The system is divided into structural database management, data models, and service/business logic layers:
 
-
+```text
 IMS/
 │
 ├── Database/
@@ -19,7 +24,7 @@ IMS/
 │   ├── batches.py
 │   ├── certificates.py
 │   ├── courses.py
-│   ├── faculty.zpy
+│   ├── faculty.py
 │   ├── fee_transaction.py
 │   ├── fees.py
 │   ├── followups.py
@@ -41,8 +46,8 @@ IMS/
     ├── followups_services.py     # Lead and enquiry follow-up tracking
     ├── student_services.py       # Student lifecycle management
     └── users_services.py         # Authentication and user role configuration
-
-✨ Features
+```
+## Features
 Multi-Role Authentication: Separate interactive menus for Admin, Faculty, Receptionist, and Students.
 
 Student & Faculty Management: Complete CRUD operations for handling student profiles, faculty onboarding, and assignments.
@@ -55,32 +60,30 @@ Enquiry Follow-ups: Keep a log of potential admissions and ongoing follow-up com
 
 Certification: Generate and maintain academic records or certificates for students completing courses.
 
-🚀 Getting Started
+## 🚀 Getting Started
 Prerequisites
 Make sure you have Python installed on your local machine.
 
 Installation & Setup
 Clone the repository:
 
+```
 Bash
 git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 cd IMS
+```
 Set up the Database:
-Ensure your database configurations inside Database/db.py are properly configured according to your local database environment.
+Ensure your database configurations inside ```Database/db.py``` are properly configured according to your local database environment.
 
 Run the Application:
 (Note: Replace main.py with your main entry point script file if it has a different name)
 
+```
 Bash
 python main.py
-🛠️ Tech Stack
+```
+
+## 🛠️ Tech Stack
 Language: Python
 
-Database Layer: SQL / Database-specific libraries connected via db.py
-
-
----
-
-### Key adjustments you might want to make:
-1. **Entry Point:** Since a main runner file (`main.py` or `app.py`) is not fully visible in the screenshot snippet, make sure to change `python main.py` to whichever script you use to launch your application.
-2. **Repository Links:** Replace `your-username` and `your-repo-name` with your actual GitHub us
+Database Layer: SQL / Database-specific libraries connected via ```db.py```
